@@ -1,0 +1,449 @@
+:root{
+    --card-hight: fit-content;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.header-main{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: fit-content;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: rgba(00, 00, 00, 0.4);
+}
+
+.header-main p{
+    color: white;
+    font-size: 2.5rem;
+    margin: 2.5rem 12rem;
+    font-weight: 700;
+    text-shadow: 0 0 20px;
+    color: rgb(255, 64, 255);
+}
+
+.header-main ul{
+    display: flex;
+    margin: 2.5rem 5rem;
+}
+
+.header-main ul li{
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+}
+
+.header-main ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    text-shadow: 0 0 20px;
+}
+
+.header-main a:hover{
+    color: pink;
+}
+
+/*----------Scetion One----------*/
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.se-1{
+    background-image: url("images/se1/House.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+}
+
+.containor-cards{
+    position: relative;
+    width: 400px;
+    min-height: 300px;
+    margin: auto;
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+}
+
+.card{
+    background-color: rgba(00, 00, 00, 0.4);
+    width: 400px;
+    height: fit-content;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-card{
+    display: flex;
+    justify-content: center;
+}
+
+.image-card img{
+    width: 120px;
+    height: 120px;
+    outline: none;
+    border-radius: 50%;
+}
+
+.info{
+    color: white;
+    margin-top: 10px;
+    width: 300px;
+    min-height: 300px;
+}
+
+.info strong{
+    display: flex;
+    justify-content: center;
+    font-size: 2.3rem;
+    margin-bottom: 5rem;
+}
+
+.info p{
+   display: flex;
+   justify-content: left;
+   font-size: 1.9rem;
+   margin-bottom: 12px;
+}
+
+.info ul{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.info ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.info ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.info ul li a i{
+    font-size: 2.5rem;
+}
+
+.youtube-icon:hover{
+    color: rgb(219, 0, 0);
+}
+
+.facebook-icon:hover{
+    color: rgb(0, 0, 255);
+}
+
+
+.card-back.s1{
+    position: absolute;
+    width: 40rem;
+    height: 45rem;
+    outline: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -1rem;
+    background-image: url("images/se1/card-back-naruto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    transform: rotateY(180deg);
+} 
+
+.both-card{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.containor-cards:hover{
+    transform: rotateY(-180deg);
+}
+
+.follow{
+    width: fit-content;
+    min-height: fit-content;
+    background-color: rgba(00, 00, 00, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.follow p{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.follow ul{
+    display: flex;
+    justify-content: center;
+}
+
+.follow li{
+    list-style: none;
+    margin: 10px 10px;
+}
+
+.follow ul li a{
+    color: white;
+    font-size: 2.5rem;
+}
+
+::selection{
+    background-color: royalblue;
+}
+
+/*----------Section Two----------*/
+
+.se-2{
+    background-image: url("images/se2/sea.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+}
+
+.card-back.s2{
+    position: absolute;
+    width: 40rem;
+    height: 45rem;
+    outline: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -1rem;
+    background-image: url("images/se2/card-back-kakashi.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    transform: rotateY(180deg);
+} 
+
+.insta-icon:hover{
+    color: darkorange;
+}
+
+/*----------Section Three----------*/
+
+.se-3{
+    background-image: url("images/se3/nature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+}
+
+.card-back.s3{
+    position: absolute;
+    width: 40rem;
+    height: 45rem;
+    outline: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -1rem;
+    background-image: url("images/se3/card-back-madara.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    transform: rotateY(180deg);
+} 
+
+.twitter-icon:hover{
+    color: royalblue;
+}
+
+/*----------Section Four----------*/
+
+.se-4{
+    background-image: url("images/se4/spring.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+}
+
+.card-back.s4{
+    position: absolute;
+    width: 40rem;
+    height: 45rem;
+    outline: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -1rem;
+    background-image: url("images/se4/card-back-obito.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    transform: rotateY(180deg);
+} 
+
+.messenger-icon:hover{
+    color: rgb(255, 0, 255);
+}
+
+/*----------Section Five----------*/
+
+.se-5{
+    background-image: url("images/se5/Maontains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+}
+
+.card-back.s5{
+    position: absolute;
+    width: 40rem;
+    height: 45rem;
+    outline: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -1rem;
+    background-image: url("images/se5/card-back-hokage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    transform: rotateY(180deg);
+} 
+
+/*----------Section Six----------*/
+
+.se-6{
+    background-image: url("images/se6/b-nature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+}
+
+.card-back.s6{
+    position: absolute;
+    width: 40rem;
+    height: 45rem;
+    outline: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -1rem;
+    background-image: url("images/se6/card-back-shkumaru.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    transform: rotateY(180deg);
+} 
+
+/*----------Footer----------*/
+
+footer.about{
+    padding: 10px;
+    display: flex;
+    align-content: flex-end;
+    background-color: rgb(0, 0, 70);
+    min-width: 200vw;
+    height: fit-content;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+footer.about p{
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.header-main ul li a span{
+    color: rgb(255, 255, 0);
+}
+
+.header-main ul li a span:hover{
+    color: orange;
+}
+
+
+@media (max-width:767px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .header-main p{
+        font-size: 10px;
+        margin: 30px 20px 15px 20px;
+    }
+    .header-main ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 20px;
+    }
+
+    .header-main ul li a{
+        font-size: 10px;
+    }
+
+    section{
+        width: 210vw;
+        min-height: 200vh;
+        font-family: 'Edu NSW ACT Foundation', cursive;
+    }
+    
+    .follow{
+        margin: 400px auto;
+    }
+
+    footer.about{
+        min-width: 210vw;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width:991px){
+
+    .header-main p{
+        font-size: 20px;
+        margin: 30px 20px 15px 20px;
+    }
+
+    .follow{
+        margin: 300px auto;
+    }
+
+    section{
+        min-width: 200vw;
+    }
+}
+
+@media (min-width:800px) and (min-height:1180px){
+    section{
+        min-width: 200vw;
+    }
+}
