@@ -385,7 +385,6 @@ footer.about p{
     color: orange;
 }
 
-
 @media (max-width:767px){
 
     body{
@@ -393,7 +392,7 @@ footer.about p{
     }
 
     .header-main p{
-        font-size: 10px;
+        font-size: 1rem;
         margin: 30px 20px 15px 20px;
     }
     .header-main ul{
@@ -418,6 +417,16 @@ footer.about p{
 
     footer.about{
         min-width: 210vw;
+    }
+}
+
+@media (max-width:280px) {
+
+    .containor-cards{
+        position: relative;
+        top: 50%;
+        right: 50%;
+        transform: translate(25%, 50%);
     }
 }
 
