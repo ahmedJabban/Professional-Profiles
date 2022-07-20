@@ -35,11 +35,11 @@ body{
 
 .header-main p a{
     text-decoration: none;
-    color: rgb(255, 64, 255);
+    color: rgb(255, 182, 46);
 }
 
 .header-main p a:hover{
-    color: rgb(219, 52, 219);
+    color: darkorange;
 }
 
 .header-main ul{
