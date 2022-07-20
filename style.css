@@ -31,7 +31,15 @@ body{
     margin: 2.5rem 12rem;
     font-weight: 700;
     text-shadow: 0 0 20px;
+}
+
+.header-main p a{
+    text-decoration: none;
     color: rgb(255, 64, 255);
+}
+
+.header-main p a:hover{
+    color: rgb(219, 52, 219);
 }
 
 .header-main ul{
