@@ -332,7 +332,6 @@ footer.about p{
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: absolute;
     }
 
     .header-main .title{
