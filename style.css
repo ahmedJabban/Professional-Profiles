@@ -25,7 +25,7 @@ body{
     background-color: rgba(00, 00, 00, 0.4);
 }
 
-.header-main p{
+.header-main .title{
     color: white;
     font-size: 2.5rem;
     margin: 2.5rem 12rem;
@@ -33,12 +33,12 @@ body{
     text-shadow: 0 0 20px;
 }
 
-.header-main p a{
+.header-main .title{
     text-decoration: none;
     color: rgb(255, 182, 46);
 }
 
-.header-main p a:hover{
+.header-main .title:hover{
     color: darkorange;
 }
 
@@ -82,26 +82,6 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 150px;
-}
-
-.containor-cards{
-    position: relative;
-    width: 400px;
-    min-height: 300px;
-    margin: auto;
-    transform-style: preserve-3d;
-    transition: transform 0.4s;
-}
-
-.card{
-    background-color: rgba(00, 00, 00, 0.4);
-    width: 400px;
-    height: fit-content;
-    outline: none;
-    border-radius: 15px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
 }
 
 .image-card{
@@ -166,26 +146,42 @@ section{
 }
 
 
-.card-back.s1{
-    position: absolute;
-    width: 40rem;
-    height: 45rem;
+.containor-cards{
+    position: relative;
+    width: 400px;
+    height: fit-content;
+    margin: auto;
+    transform-style: preserve-3d;
+    transition: 0.4s;
+    background-color: red;
+}
+
+.card-back{
     outline: none;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
+    padding: 0;
     overflow: hidden;
-    margin-top: -1rem;
-    background-image: url("images/se1/card-back-naruto.jpg");
+    transform: rotateY(180deg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
-    transform: rotateY(180deg);
+    overflow: hidden;
 } 
 
+.card-back.s1{
+    background-image: url("images/se1/card-back-naruto.jpg");
+}
+
 .both-card{
+    width: 40rem;
+    height: 40rem;
+    background-color: rgba(00, 00, 00, 0.4);
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
     position: absolute;
     backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 
 .containor-cards:hover{
@@ -198,6 +194,7 @@ section{
     background-color: rgba(00, 00, 00, 0.6);
     padding: 10px;
     border-radius: 10px;
+    margin: 20% 5%;
 }
 
 .follow p{
@@ -234,20 +231,7 @@ section{
 }
 
 .card-back.s2{
-    position: absolute;
-    width: 40rem;
-    height: 45rem;
-    outline: none;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: -1rem;
     background-image: url("images/se2/card-back-kakashi.jpg"); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px;
-    transform: rotateY(180deg);
 } 
 
 .insta-icon:hover{
@@ -264,20 +248,7 @@ section{
 }
 
 .card-back.s3{
-    position: absolute;
-    width: 40rem;
-    height: 45rem;
-    outline: none;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: -1rem;
     background-image: url("images/se3/card-back-madara.jpg"); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px;
-    transform: rotateY(180deg);
 } 
 
 .twitter-icon:hover{
@@ -294,20 +265,7 @@ section{
 }
 
 .card-back.s4{
-    position: absolute;
-    width: 40rem;
-    height: 45rem;
-    outline: none;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: -1rem;
     background-image: url("images/se4/card-back-obito.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px;
-    transform: rotateY(180deg);
 } 
 
 .messenger-icon:hover{
@@ -324,20 +282,7 @@ section{
 }
 
 .card-back.s5{
-    position: absolute;
-    width: 40rem;
-    height: 45rem;
-    outline: none;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: -1rem;
     background-image: url("images/se5/card-back-hokage.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px;
-    transform: rotateY(180deg);
 } 
 
 /*----------Section Six----------*/
@@ -350,20 +295,7 @@ section{
 }
 
 .card-back.s6{
-    position: absolute;
-    width: 40rem;
-    height: 45rem;
-    outline: none;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: -1rem;
     background-image: url("images/se6/card-back-shkumaru.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px;
-    transform: rotateY(180deg);
 } 
 
 /*----------Footer----------*/
@@ -373,7 +305,7 @@ footer.about{
     display: flex;
     align-content: flex-end;
     background-color: rgb(0, 0, 70);
-    min-width: 200vw;
+    width: 100vw;
     height: fit-content;
     font-family: 'Rajdhani', sans-serif;
 }
@@ -393,70 +325,166 @@ footer.about p{
     color: orange;
 }
 
-@media (max-width:767px){
+@media (max-width:540px){
 
-    body{
-        overflow-x: hidden;
+    .header-main{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
     }
 
-    .header-main p{
-        font-size: 1rem;
-        margin: 30px 20px 15px 20px;
+    .header-main .title{
+        text-align: center;
+        font-size: 15px;
+        width: 200px;
+        margin: 3% auto;
     }
-    .header-main ul{
+
+    .header-main nav ul{
         display: flex;
         flex-wrap: wrap;
-        margin: 20px 20px;
+        margin: auto;
+        justify-content: center;
     }
 
-    .header-main ul li a{
+    .header-main nav ul li a{
         font-size: 10px;
     }
 
     section{
-        width: 210vw;
-        min-height: 200vh;
-        font-family: 'Edu NSW ACT Foundation', cursive;
+        width: 100vw;
+        overflow: hidden;
     }
-    
+
+    .containor-cards{
+        transform: scale(0.7);
+        right: 160px;
+    }
+
+    .card-back{
+        width: 280px;
+        height: 300px;
+        top: 0px;
+        left: 60px;
+    }
+
     .follow{
-        margin: 400px auto;
+        margin-top: 350px;
+        position: absolute;
+        left: 25%;
+        transform: scale(0.7);
+    }
+
+    .about{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .info-about p{
+        font-size: 12px;
+    }
+}
+
+@media (width:414px) or (width:412px){
+    .containor-cards{
+        right: 140px;
+    }
+}
+
+@media (width:390px) or (width:393px){
+    .containor-cards{
+        right: 150px;
+    }
+}
+
+@media (width:360px){
+    .containor-cards{
+        right: 170px;
+    }
+}
+
+@media (width:540px){
+    .containor-cards{
+        right: 80px;
+    }
+
+    .follow{
+        position: absolute;
+        left: 30%;
+    }
+}
+
+@media (min-width:741px) and (max-width:950px){
+
+    .header-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-main nav ul{
+        margin: 0px auto 20px;
+    }
+
+    .containor-cards{
+        top: 40px;
+        right: 0px;
+    }
+
+    .follow{
+        position: absolute;
+        margin-top: 500px;
+        left: 35%;
+    }
+}
+
+@media (width:280px){
+
+    .header-main{
+        width: 107vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-main .title{
+        font-size: 12px;
+    }
+
+    .header-main nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .header-main nav ul li a{
+        font-size: 8px;
+    }
+
+    .header-main .title{
+        margin: 10px auto 5px;
+    }
+
+    .containor-cards{
+        transform: scale(0.6);
+        top: -30px;
+        left: -197px;
+    }
+
+    .card-back{
+        width: 240px;
+        height: 240px;
+        left: 82px;
+    }
+
+    .follow{
+        margin-top: 260px;
+        left: 20%;
     }
 
     footer.about{
-        min-width: 210vw;
-    }
-}
-
-@media (max-width:280px) {
-
-    .containor-cards{
-        position: relative;
-        top: 50%;
-        right: 50%;
-        transform: translate(25%, 50%);
-    }
-}
-
-
-@media (min-width: 768px) and (max-width:991px){
-
-    .header-main p{
-        font-size: 20px;
-        margin: 30px 20px 15px 20px;
-    }
-
-    .follow{
-        margin: 300px auto;
-    }
-
-    section{
-        min-width: 200vw;
-    }
-}
-
-@media (min-width:800px) and (min-height:1180px){
-    section{
-        min-width: 200vw;
+        width: 107vw;
     }
 }
