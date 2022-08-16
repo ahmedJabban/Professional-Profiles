@@ -392,6 +392,9 @@ footer.about p{
     .containor-cards{
         right: 140px;
     }
+    .header-main nav ul li a{
+        font-size: 8px;
+    }
 }
 
 @media (width:390px) or (width:393px){
